@@ -5,6 +5,7 @@ button_delay = 0.1
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(18,GPIO.OUT)
+GPIO.output(18,GPIO.HIGH)
 
 print 'Please press buttons 1 + 2 on your Wiimote now ...'
 time.sleep(1)
@@ -15,8 +16,7 @@ try:
 except RuntimeError:
   print "Cannot connect to your Wiimote. Run again and make sure you are holding buttons 1 + 2!"
   quit()
-  
-GPIO.output(18,GPIO.HIGH)
+
 print 'Wiimote connection established!\n'
 print 'Go ahead and press some buttons\n'
 print 'Press PLUS and MINUS together to disconnect and quit.\n'
