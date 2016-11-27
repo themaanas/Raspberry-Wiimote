@@ -36,6 +36,7 @@ while True:
     wii.rumble = 1
     time.sleep(1)
     wii.rumble = 0
+    GPIO.output(18,GPIO.LOW)
     exit(wii)
 
   # The following code detects whether any of the Wiimotes buttons have been pressed and then prints a statement to the screen!
