@@ -6,9 +6,6 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(18,GPIO.OUT)
 GPIO.output(18,GPIO.HIGH)
-wii.rumble = 1
-time.sleep(1)
-wii.rumble = 0
 
 print 'Please press buttons 1 + 2 on your Wiimote now ...'
 time.sleep(1)
